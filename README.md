@@ -27,5 +27,10 @@ V 2.1.1
 * 修改UI，更美观
 * 修复了一些已知的Bug
 
+##下载
+[直接下载最新版](https://github.com/TheGreatFireWall/EasyCUST/releases/download/v2.1.2-beta/CUST.zip)
+
+[查看release所有版本](https://github.com/TheGreatFireWall/EasyCUST/releases)
+
 ##LICENSE
 GNU
