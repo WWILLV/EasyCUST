@@ -38,4 +38,4 @@ V 2.1.1
 * [QQ直接对话](http://sighttp.qq.com/msgrd?v=3&uin=767436053&site=&menu=yes)
 
 ##LICENSE
-GNU
+[GNU](https://github.com/TheGreatFireWall/EasyCUST/blob/master/LICENSE)
