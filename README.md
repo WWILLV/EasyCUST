@@ -32,5 +32,10 @@ V 2.1.1
 
 [查看release所有版本](https://github.com/TheGreatFireWall/EasyCUST/releases)
 
+##联系我
+* [微博](http://weibo.com/u/2693120655)
+* [Github](https://github.com/TheGreatFireWall)
+* [QQ直接对话](http://sighttp.qq.com/msgrd?v=3&uin=767436053&site=&menu=yes)
+
 ##LICENSE
-GNU
+[GNU](https://github.com/TheGreatFireWall/EasyCUST/blob/master/LICENSE)
