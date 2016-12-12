@@ -41,6 +41,9 @@ namespace CUST教务管理系统
             clickbrowser = 1;
             isbrowser = false;
             webBrowser1.Navigate("http://jwgl.cust.edu.cn/teachwebsl/login.aspx");
+            //抢课及评估未完成~
+            btn_choseclass.Visible = false;
+            btn_teachergrade.Visible = false;
         }
         #region 按钮事件
 
@@ -245,6 +248,25 @@ namespace CUST教务管理系统
             user.pass = encrypt.wvc(encrypt.Base64Encode(textBox_pwd.Text));
             info.JsonIn(user, @"usr\\usr.json");
         }
+        
+        private void btn_fangan_Click(object sender, EventArgs e)   //培养方案
+        {
+            string url = "http://jwc.cust.edu.cn/Resource.asp?BigClassID=109&SmallClassID=524";
+            webBrowser1.Navigate(url);
+        }
+
+        private void linkLabel_open_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) //开源链接
+        {
+            string url = "https://github.com/TheGreatFireWall/EasyCUST";
+            System.Diagnostics.Process.Start(url);
+        }
+
+        private void btn_willv_Click(object sender, EventArgs e)    //作者主页
+        {
+            string url = "http://www.willv.cn";
+            System.Diagnostics.Process.Start(url);
+        }
+
         #endregion
 
     }
