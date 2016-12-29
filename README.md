@@ -28,9 +28,7 @@ V 2.1.1
 * 修复了一些已知的Bug
 
 ##下载
-[直接下载最新版](https://github.com/TheGreatFireWall/EasyCUST/releases/download/v2.1.2-beta/CUST.zip)
-
-[查看release所有版本](https://github.com/TheGreatFireWall/EasyCUST/releases)
+因教务处老师要求，暂不提供下载，有需要的自己下原代码编译
 
 ##联系我
 * [微博](http://weibo.com/u/2693120655)
