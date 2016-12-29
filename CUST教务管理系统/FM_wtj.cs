@@ -17,6 +17,11 @@ namespace CUST教务管理系统
             InitializeComponent();
         }
 
+        /// <summary>
+        /// 计算按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -36,9 +41,36 @@ namespace CUST教务管理系统
             }
         }
 
+        /// <summary>
+        /// 打开系统计算器
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("calc");
+        }
+        
+        /// <summary>
+        /// 自动计算未提交学分
+        /// </summary>
+        private void credit()
+        {
+            if (textBox4.Text != "" && textBox2.Text != "")
+            {
+                double credit = Convert.ToDouble(textBox4.Text) - Convert.ToDouble(textBox2.Text);
+                textBox5.Text = credit.ToString();
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            credit();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            credit();
         }
     }
 }

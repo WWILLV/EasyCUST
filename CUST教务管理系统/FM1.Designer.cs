@@ -55,11 +55,11 @@
             this.btn_auto = new System.Windows.Forms.Button();
             this.btn_wtj = new System.Windows.Forms.Button();
             this.group_Function = new System.Windows.Forms.GroupBox();
+            this.btn_willv = new System.Windows.Forms.Button();
             this.linkLabel_open = new System.Windows.Forms.LinkLabel();
             this.btn_fangan = new System.Windows.Forms.Button();
             this.btn_quickLog = new System.Windows.Forms.Button();
             this.btn_rasdial = new System.Windows.Forms.Button();
-            this.btn_willv = new System.Windows.Forms.Button();
             this.group_Function.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -199,7 +199,7 @@
             this.version.Name = "version";
             this.version.Size = new System.Drawing.Size(215, 12);
             this.version.TabIndex = 15;
-            this.version.Text = "V2.1.2 All Rights Reserved © WILL_V";
+            this.version.Text = "V2.1.3 All Rights Reserved © WILL_V";
             // 
             // btn_support
             // 
@@ -352,6 +352,16 @@
             this.group_Function.TabIndex = 29;
             this.group_Function.TabStop = false;
             // 
+            // btn_willv
+            // 
+            this.btn_willv.Location = new System.Drawing.Point(20, 397);
+            this.btn_willv.Name = "btn_willv";
+            this.btn_willv.Size = new System.Drawing.Size(75, 23);
+            this.btn_willv.TabIndex = 33;
+            this.btn_willv.Text = "作者主页";
+            this.btn_willv.UseVisualStyleBackColor = true;
+            this.btn_willv.Click += new System.EventHandler(this.btn_willv_Click);
+            // 
             // linkLabel_open
             // 
             this.linkLabel_open.AutoSize = true;
@@ -393,16 +403,6 @@
             this.btn_rasdial.UseVisualStyleBackColor = true;
             this.btn_rasdial.Click += new System.EventHandler(this.btn_rasdial_Click);
             // 
-            // btn_willv
-            // 
-            this.btn_willv.Location = new System.Drawing.Point(20, 397);
-            this.btn_willv.Name = "btn_willv";
-            this.btn_willv.Size = new System.Drawing.Size(75, 23);
-            this.btn_willv.TabIndex = 33;
-            this.btn_willv.Text = "作者主页";
-            this.btn_willv.UseVisualStyleBackColor = true;
-            this.btn_willv.Click += new System.EventHandler(this.btn_willv_Click);
-            // 
             // FM1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -413,7 +413,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FM1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CUST教务管理系统 - V2.1.2 Beta 内测版";
+            this.Text = "CUST教务管理系统 - V2.1.3 Beta 内测版";
             this.group_Function.ResumeLayout(false);
             this.group_Function.PerformLayout();
             this.ResumeLayout(false);
