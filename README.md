@@ -6,7 +6,7 @@
 * 千万千万！千万别在浏览器界面开窗口，关闭窗口，这将导致软件崩溃！
 * 软件的V1.4.2及以后的版本由于学校封堵漏洞已停止开发
 * 选课期间教务管理系统不稳定，请不要频繁点击按钮
-* 有任何软件使用问题，请使用反馈或联系作者，QQ:767436053
+* 有任何软件使用问题，请使用反馈或联系作者，[点击QQ直接聊天](http://sighttp.qq.com/msgrd?v=3&uin=767436053&site=&menu=yes)
 * 提示脚本错误，无视，继续运行即可
 * 网费充值需要在学号和密码的输入框里填教务的用户名和密码
 * 浏览器模式为所有链接在浏览器中打开，软件默认置顶
@@ -28,12 +28,11 @@ V 2.1.1
 * 修复了一些已知的Bug
 
 ##下载
-因教务处老师要求，暂不提供下载，有需要的自己下原代码编译
+<b>:triangular_flag_on_post: 因教务处老师要求，暂不提供下载，有需要的自己下原代码编译</b>
 
 ##联系我
 * [微博](http://weibo.com/u/2693120655)
 * [Github](https://github.com/TheGreatFireWall)
-* [QQ直接对话](http://sighttp.qq.com/msgrd?v=3&uin=767436053&site=&menu=yes)
 
 ##LICENSE
 [GNU](https://github.com/TheGreatFireWall/EasyCUST/blob/master/LICENSE)
