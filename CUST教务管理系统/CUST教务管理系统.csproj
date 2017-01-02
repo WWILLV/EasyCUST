@@ -109,6 +109,7 @@
     </Compile>
     <Compile Include="InternetCheck.cs" />
     <Compile Include="info.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FM1.resx">

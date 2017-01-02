@@ -17,6 +17,7 @@ namespace CUST教务管理系统
         private string loginurl;
         private int clickbrowser;
         private bool isbrowser;
+        Log LogWriter = new Log("log.txt");
         /// <summary>
         /// 浏览器模式打开的url
         /// </summary>
@@ -53,12 +54,8 @@ namespace CUST教务管理系统
             loginurl = "http://jwgl.cust.edu.cn/teachwebsl/login.aspx?__VIEWSTATE=%2FwEPDwUJMTQyNDg3OTM5ZGQ%3D&__EVENTVALIDATION=%2FwEWBAK4vfWFDAKl1bKzCQK1qbSWCwKM54rGBg%3D%3D&txtUserName=" + textBox_usernum.Text + "&txtPassWord=" + textBox_pwd.Text + "&Button1=%E7%99%BB%E5%BD%95";
             webBrowser1.Navigate(loginurl);
             browesermode(loginurl);
-            StreamWriter log = new StreamWriter("log.txt", true);
-            log.WriteLine("*");
-            log.WriteLine(System.DateTime.Now.ToLongDateString());
-            log.Write("["+System.DateTime.Now.ToLongTimeString()+"]");
-            log.WriteLine(textBox_usernum.Text + "登录教务管理系统");
-            log.Close();
+            string log= textBox_usernum.Text + "登录教务管理系统";
+            LogWriter.loginWrite(log);
         }
 
         private void btn_class_Click(object sender, EventArgs e)    //选课
@@ -129,7 +126,7 @@ namespace CUST教务管理系统
 
         private void btn_webpay_Click(object sender, EventArgs e)   //网费充值（主要是获取cookies）
         {
-            MessageBox.Show("再点一次该按钮！");
+            MessageBox.Show("等浏览器窗口变白后再点一次该按钮！");
             string loginurl = "http://my.cust.edu.cn/userPasswordValidate.portal?Login.Token1="
                 + textBox_usernum.Text + "&Login.Token2=" + textBox_pwd.Text;
             //+"&goto=http%3A%2F%2Fmy.cust.edu.cn%2FloginSuccess.portal"&gotoOnFail=http%3A%2F%2Fmy.cust.edu.cn%2FloginFailure.portal";
@@ -145,10 +142,7 @@ namespace CUST教务管理系统
             string tourl = "http://ecard.cust.edu.cn/cclgportalHome.action";
             webBrowser1.Navigate(tourl);
             browesermode(tourl);
-            StreamWriter log = new StreamWriter("log.txt", true);
-            log.Write("[" + System.DateTime.Now.ToLongTimeString() + "]");
-            log.WriteLine(textBox_usernum.Text + "充值网费");
-            log.Close();
+            LogWriter.write(textBox_usernum.Text + "充值网费");
         }
 
         private void btn_notice_Click(object sender, EventArgs e)   //说明
@@ -258,10 +252,7 @@ namespace CUST教务管理系统
             user.name = encrypt.wvc(encrypt.Base64Encode(textBox_usernum.Text));
             user.pass = encrypt.wvc(encrypt.Base64Encode(textBox_pwd.Text));
             info.JsonIn(user, @"usr\\usr.json");
-            StreamWriter log = new StreamWriter("log.txt", true);
-            log.Write("[" + System.DateTime.Now.ToLongTimeString() + "]");
-            log.WriteLine(textBox_usernum.Text + "保存登录信息");
-            log.Close();
+            LogWriter.write(textBox_usernum.Text + "保存登录信息");
         }
         
         private void btn_fangan_Click(object sender, EventArgs e)   //培养方案
