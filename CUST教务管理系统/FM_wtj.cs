@@ -26,11 +26,12 @@ namespace CUST教务管理系统
         {
             try
             {
-                label8.Text =
-                Convert.ToString(
-                (Convert.ToDouble(textBox3.Text) * Convert.ToDouble(textBox4.Text)
+                double grade = (Convert.ToDouble(textBox3.Text) * Convert.ToDouble(textBox4.Text)
                 - Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox2.Text))
-                / Convert.ToDouble(textBox5.Text));
+                / Convert.ToDouble(textBox5.Text);
+                if (grade > 5)
+                    MessageBox.Show("确定没写错？学霸！");
+                label8.Text = Convert.ToString(grade);
                 if (Convert.ToDouble(label8.Text) < 1)
                     label8.Text = "计算小于1（即60分），可能已挂科……";
             }
@@ -50,7 +51,7 @@ namespace CUST教务管理系统
         {
             System.Diagnostics.Process.Start("calc");
         }
-        
+
         /// <summary>
         /// 自动计算未提交学分
         /// </summary>

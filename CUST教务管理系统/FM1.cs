@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,6 +53,12 @@ namespace CUST教务管理系统
             loginurl = "http://jwgl.cust.edu.cn/teachwebsl/login.aspx?__VIEWSTATE=%2FwEPDwUJMTQyNDg3OTM5ZGQ%3D&__EVENTVALIDATION=%2FwEWBAK4vfWFDAKl1bKzCQK1qbSWCwKM54rGBg%3D%3D&txtUserName=" + textBox_usernum.Text + "&txtPassWord=" + textBox_pwd.Text + "&Button1=%E7%99%BB%E5%BD%95";
             webBrowser1.Navigate(loginurl);
             browesermode(loginurl);
+            StreamWriter log = new StreamWriter("log.txt", true);
+            log.WriteLine("*");
+            log.WriteLine(System.DateTime.Now.ToLongDateString());
+            log.Write("["+System.DateTime.Now.ToLongTimeString()+"]");
+            log.WriteLine(textBox_usernum.Text + "登录教务管理系统");
+            log.Close();
         }
 
         private void btn_class_Click(object sender, EventArgs e)    //选课
@@ -138,6 +145,10 @@ namespace CUST教务管理系统
             string tourl = "http://ecard.cust.edu.cn/cclgportalHome.action";
             webBrowser1.Navigate(tourl);
             browesermode(tourl);
+            StreamWriter log = new StreamWriter("log.txt", true);
+            log.Write("[" + System.DateTime.Now.ToLongTimeString() + "]");
+            log.WriteLine(textBox_usernum.Text + "充值网费");
+            log.Close();
         }
 
         private void btn_notice_Click(object sender, EventArgs e)   //说明
@@ -231,7 +242,7 @@ namespace CUST教务管理系统
             }
         }
 
-        private void btn_auto_Click(object sender, EventArgs e) //保存登录 
+        private void btn_auto_Click(object sender, EventArgs e) //快速登录 
         {
             usr user = new usr();
             user = info.JsonOut(@"usr\\usr.json");
@@ -240,13 +251,17 @@ namespace CUST教务管理系统
             btn_login_Click(btn_login, new EventArgs());
         }
 
-        private void btn_quickLog_Click(object sender, EventArgs e) //快速登录
+        private void btn_quickLog_Click(object sender, EventArgs e) //保存登录
         {
             MessageBox.Show("将保存现在学号密码栏中的登录信息以便下次登录");
             usr user = new usr();
             user.name = encrypt.wvc(encrypt.Base64Encode(textBox_usernum.Text));
             user.pass = encrypt.wvc(encrypt.Base64Encode(textBox_pwd.Text));
             info.JsonIn(user, @"usr\\usr.json");
+            StreamWriter log = new StreamWriter("log.txt", true);
+            log.Write("[" + System.DateTime.Now.ToLongTimeString() + "]");
+            log.WriteLine(textBox_usernum.Text + "保存登录信息");
+            log.Close();
         }
         
         private void btn_fangan_Click(object sender, EventArgs e)   //培养方案

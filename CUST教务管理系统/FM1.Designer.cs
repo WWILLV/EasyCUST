@@ -72,7 +72,7 @@
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(553, 499);
+            this.webBrowser1.Size = new System.Drawing.Size(553, 490);
             this.webBrowser1.TabIndex = 0;
             // 
             // num
@@ -172,7 +172,7 @@
             // 
             // btn_choseclass
             // 
-            this.btn_choseclass.Location = new System.Drawing.Point(20, 440);
+            this.btn_choseclass.Location = new System.Drawing.Point(20, 441);
             this.btn_choseclass.Name = "btn_choseclass";
             this.btn_choseclass.Size = new System.Drawing.Size(75, 23);
             this.btn_choseclass.TabIndex = 13;
@@ -182,7 +182,7 @@
             // 
             // btn_teachergrade
             // 
-            this.btn_teachergrade.Location = new System.Drawing.Point(120, 440);
+            this.btn_teachergrade.Location = new System.Drawing.Point(120, 441);
             this.btn_teachergrade.Name = "btn_teachergrade";
             this.btn_teachergrade.Size = new System.Drawing.Size(75, 23);
             this.btn_teachergrade.TabIndex = 14;
@@ -195,7 +195,7 @@
             this.version.AutoSize = true;
             this.version.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.version.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.version.Location = new System.Drawing.Point(3, 484);
+            this.version.Location = new System.Drawing.Point(3, 475);
             this.version.Name = "version";
             this.version.Size = new System.Drawing.Size(215, 12);
             this.version.TabIndex = 15;
@@ -217,7 +217,7 @@
             this.btn_course.Name = "btn_course";
             this.btn_course.Size = new System.Drawing.Size(75, 23);
             this.btn_course.TabIndex = 17;
-            this.btn_course.Text = "课表查询";
+            this.btn_course.Text = "个人课表";
             this.btn_course.UseVisualStyleBackColor = true;
             this.btn_course.Click += new System.EventHandler(this.btn_course_Click);
             // 
@@ -348,7 +348,7 @@
             this.group_Function.Dock = System.Windows.Forms.DockStyle.Right;
             this.group_Function.Location = new System.Drawing.Point(557, 0);
             this.group_Function.Name = "group_Function";
-            this.group_Function.Size = new System.Drawing.Size(264, 499);
+            this.group_Function.Size = new System.Drawing.Size(264, 490);
             this.group_Function.TabIndex = 29;
             this.group_Function.TabStop = false;
             // 
@@ -364,8 +364,10 @@
             // 
             // linkLabel_open
             // 
+            this.linkLabel_open.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel_open.AutoSize = true;
-            this.linkLabel_open.Location = new System.Drawing.Point(18, 439);
+            this.linkLabel_open.Location = new System.Drawing.Point(18, 440);
             this.linkLabel_open.Name = "linkLabel_open";
             this.linkLabel_open.Size = new System.Drawing.Size(197, 24);
             this.linkLabel_open.TabIndex = 32;
@@ -407,7 +409,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 499);
+            this.ClientSize = new System.Drawing.Size(821, 490);
             this.Controls.Add(this.group_Function);
             this.Controls.Add(this.webBrowser1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
