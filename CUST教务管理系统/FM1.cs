@@ -54,7 +54,7 @@ namespace CUST教务管理系统
             loginurl = "http://jwgl.cust.edu.cn/teachwebsl/login.aspx?__VIEWSTATE=%2FwEPDwUJMTQyNDg3OTM5ZGQ%3D&__EVENTVALIDATION=%2FwEWBAK4vfWFDAKl1bKzCQK1qbSWCwKM54rGBg%3D%3D&txtUserName=" + textBox_usernum.Text + "&txtPassWord=" + textBox_pwd.Text + "&Button1=%E7%99%BB%E5%BD%95";
             webBrowser1.Navigate(loginurl);
             browesermode(loginurl);
-            string log= textBox_usernum.Text + "登录教务管理系统";
+            string log = textBox_usernum.Text + "登录教务管理系统";
             LogWriter.loginWrite(log);
         }
 
@@ -102,6 +102,13 @@ namespace CUST教务管理系统
             //string post = "__EVENTTARGET=" + choosenum + "&__EVENTARGUMENT=&__VIEWSTATE=dDw4NzEyMDk0MzQ7dDw7bDxpPDE%2BOz47bDx0PDtsPGk8Mj47aTw4Pjs%2BO2w8dDxwPHA8bDxUZXh0Oz47bDwyMDE2LTIwMTflrablubTnrKzkuIDlrabmnJ87Pj47Pjs7Pjt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE%2BO2k8Mj47PjtsPHQ8cDxwPGw8SG9yaXpvbnRhbEFsaWduO18hU0I7PjtsPFN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuSG9yaXpvbnRhbEFsaWduLCBTeXN0ZW0uV2ViLCBWZXJzaW9uPTEuMC41MDAwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYTxSaWdodD47aTw2NTUzNj47Pj47Pjs7Pjt0PHA8cDxsPEhvcml6b250YWxBbGlnbjtfIVNCOz47bDw1MDxDZW50ZXI%2BO2k8NjU1MzY%2BOz4%2BOz47Oz47dDxwPHA8bDxIb3Jpem9udGFsQWxpZ247XyFTQjs%2BO2w8NTA8TGVmdD47aTw2NTUzNj47Pj47Pjs7Pjs%2BPjs%2BPjs%2BPjs%2BPjtsPDE7MjszOzQ7NTs2OzEwOzExOzIxOzIyOzIzOzI0OzI1OzI2OzI3OzI4OzI5OzMwOzMxOzMyOzMzOzM0OzM1OzM2OzM3OzM4OzM5OzQwOzQxOzQyOzQzOzQ0OzQ1OzQ2OzQ3OzQ4OzQ5OzUwOzUxOzUyOzUzOz4%2BpaDSqdIC1XV%2BOOHEltfrv2fTSZo%3D&1=on&2=on&3=on&4=on&5=on&10=on&" + choosenum + "=on&scrollValue=756";
             //byte[] postdata = System.Text.Encoding.UTF8.GetBytes(post);
             //webBrowser1.Navigate(url, "", postdata, "");
+
+            //接口如下：
+            //选课：
+            //__EVENTTARGET = 34 & __EVENTARGUMENT = &__VIEWSTATE = dDw4NzEyMDk0MzQ7dDw7bDxpPDE % 2BOz47bDx0PDtsPGk8Mj47aTw4Pjs % 2BO2w8dDxwPHA8bDxUZXh0Oz47bDwyMDE2LTIwMTflrablubTnrKzkuIDlrabmnJ87Pj47Pjs7Pjt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE % 2BO2k8Mj47PjtsPHQ8cDxwPGw8SG9yaXpvbnRhbEFsaWduO18hU0I7PjtsPFN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuSG9yaXpvbnRhbEFsaWduLCBTeXN0ZW0uV2ViLCBWZXJzaW9uPTEuMC41MDAwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYTxSaWdodD47aTw2NTUzNj47Pj47Pjs7Pjt0PHA8cDxsPEhvcml6b250YWxBbGlnbjtfIVNCOz47bDw1MDxDZW50ZXI % 2BO2k8NjU1MzY % 2BOz4 % 2BOz47Oz47dDxwPHA8bDxIb3Jpem9udGFsQWxpZ247XyFTQjs % 2BO2w8NTA8TGVmdD47aTw2NTUzNj47Pj47Pjs7Pjs % 2BPjs % 2BPjs % 2BPjs % 2BPjtsPDE7MjszOzQ7NTs2OzEwOzExOzIxOzIyOzIzOzI0OzI1OzI2OzI3OzI4OzI5OzMwOzMxOzMyOzMzOzM0OzM1OzM2OzM3OzM4OzM5OzQwOzQxOzQyOzQzOzQ0OzQ1OzQ2OzQ3OzQ4OzQ5OzUwOzUxOzUyOzUzOz4 % 2BpaDSqdIC1XV % 2BOOHEltfrv2fTSZo % 3D & 1 = on & 2 = on & 3 = on & 4 = on & 5 = on & 10 = on & 34 = on & scrollValue = 827
+            //__EVENTTARGET = 33 & __EVENTARGUMENT = &__VIEWSTATE = dDw4NzEyMDk0MzQ7dDw7bDxpPDE % 2BOz47bDx0PDtsPGk8Mj47aTw4Pjs % 2BO2w8dDxwPHA8bDxUZXh0Oz47bDwyMDE2LTIwMTflrablubTnrKzkuIDlrabmnJ87Pj47Pjs7Pjt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE % 2BO2k8Mj47PjtsPHQ8cDxwPGw8SG9yaXpvbnRhbEFsaWduO18hU0I7PjtsPFN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuSG9yaXpvbnRhbEFsaWduLCBTeXN0ZW0uV2ViLCBWZXJzaW9uPTEuMC41MDAwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYTxSaWdodD47aTw2NTUzNj47Pj47Pjs7Pjt0PHA8cDxsPEhvcml6b250YWxBbGlnbjtfIVNCOz47bDw1MDxDZW50ZXI % 2BO2k8NjU1MzY % 2BOz4 % 2BOz47Oz47dDxwPHA8bDxIb3Jpem9udGFsQWxpZ247XyFTQjs % 2BO2w8NTA8TGVmdD47aTw2NTUzNj47Pj47Pjs7Pjs % 2BPjs % 2BPjs % 2BPjs % 2BPjtsPDE7MjszOzQ7NTs2OzEwOzExOzIxOzIyOzIzOzI0OzI1OzI2OzI3OzI4OzI5OzMwOzMxOzMyOzMzOzM0OzM1OzM2OzM3OzM4OzM5OzQwOzQxOzQyOzQzOzQ0OzQ1OzQ2OzQ3OzQ4OzQ5OzUwOzUxOzUyOzUzOz4 % 2BpaDSqdIC1XV % 2BOOHEltfrv2fTSZo % 3D & 1 = on & 2 = on & 3 = on & 4 = on & 5 = on & 10 = on & 33 = on & scrollValue = 756
+            //取消：
+            //__EVENTTARGET = 33 & __EVENTARGUMENT = &__VIEWSTATE = dDw4NzEyMDk0MzQ7dDw7bDxpPDE % 2BOz47bDx0PDtsPGk8Mj47aTw4Pjs % 2BO2w8dDxwPHA8bDxUZXh0Oz47bDwyMDE2LTIwMTflrablubTnrKzkuIDlrabmnJ87Pj47Pjs7Pjt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE % 2BO2k8Mj47PjtsPHQ8cDxwPGw8SG9yaXpvbnRhbEFsaWduO18hU0I7PjtsPFN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuSG9yaXpvbnRhbEFsaWduLCBTeXN0ZW0uV2ViLCBWZXJzaW9uPTEuMC41MDAwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYTxSaWdodD47aTw2NTUzNj47Pj47Pjs7Pjt0PHA8cDxsPEhvcml6b250YWxBbGlnbjtfIVNCOz47bDw1MDxDZW50ZXI % 2BO2k8NjU1MzY % 2BOz4 % 2BOz47Oz47dDxwPHA8bDxIb3Jpem9udGFsQWxpZ247XyFTQjs % 2BO2w8NTA8TGVmdD47aTw2NTUzNj47Pj47Pjs7Pjs % 2BPjs % 2BPjs % 2BPjs % 2BPjtsPDE7MjszOzQ7NTs2OzEwOzExOzIxOzIyOzIzOzI0OzI1OzI2OzI3OzI4OzI5OzMwOzMxOzMyOzMzOzM0OzM1OzM2OzM3OzM4OzM5OzQwOzQxOzQyOzQzOzQ0OzQ1OzQ2OzQ3OzQ4OzQ5OzUwOzUxOzUyOzUzOz4 % 2BpaDSqdIC1XV % 2BOOHEltfrv2fTSZo % 3D & 1 = on & 2 = on & 3 = on & 4 = on & 5 = on & 10 = on & scrollValue = 439
         }
 
         private void btn_teachergrade_Click(object sender, EventArgs e) //一键评估
@@ -254,7 +261,7 @@ namespace CUST教务管理系统
             info.JsonIn(user, @"usr\\usr.json");
             LogWriter.write(textBox_usernum.Text + "保存登录信息");
         }
-        
+
         private void btn_fangan_Click(object sender, EventArgs e)   //培养方案
         {
             string url = "http://jwc.cust.edu.cn/Resource.asp?BigClassID=109&SmallClassID=524";

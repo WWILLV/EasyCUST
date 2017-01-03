@@ -10,7 +10,7 @@ namespace CUST教务管理系统
     class Log
     {
         string path = "";
-    public Log(string path)
+        public Log(string path)
         {
             this.path = path;
             if (!File.Exists(path)) //系统信息
@@ -18,16 +18,16 @@ namespace CUST教务管理系统
                 StreamWriter log = new StreamWriter(path, true);
                 log.WriteLine("OSVersion：" + Environment.OSVersion.ToString());
                 log.WriteLine("MachineName:" + Environment.MachineName.ToString());
-                log.WriteLine("User:" + Environment.UserName.ToString());
                 log.WriteLine(".Net Version:" + Environment.Version.ToString());
-                log.WriteLine("Is x64:" + Environment.Is64BitOperatingSystem.ToString());
                 log.Close();
             }
+            clean();
         }
         public void loginWrite(string str)  //登录日志
         {
             StreamWriter log = new StreamWriter(path, true);
             log.WriteLine("*");
+            log.WriteLine("User:" + Environment.UserName.ToString());
             log.WriteLine(System.DateTime.Now.ToLongDateString());
             log.Write("[" + System.DateTime.Now.ToLongTimeString() + "]");
             log.WriteLine(str);
@@ -39,6 +39,18 @@ namespace CUST教务管理系统
             log.Write("[" + System.DateTime.Now.ToLongTimeString() + "]");
             log.WriteLine(str);
             log.Close();
+        }
+        public void clean() //清理日志
+        {
+            FileInfo fi = new FileInfo(path);
+            if(fi.Length>=(100*1024))   //100k清理log
+            {
+                StreamWriter log = new StreamWriter(path, false);
+                log.WriteLine("OSVersion：" + Environment.OSVersion.ToString());
+                log.WriteLine("MachineName:" + Environment.MachineName.ToString());
+                log.WriteLine(".Net Version:" + Environment.Version.ToString());
+                log.Close();
+            }
         }
     }
 }

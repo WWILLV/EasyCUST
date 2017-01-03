@@ -21,7 +21,7 @@ echo.
 echo -登录中...
 echo. 
 echo.
-rem %windir%/system32/rasdial 宽带连接 en1109 1245
+%windir%/system32/rasdial 宽带连接 en1109 1245
 whoami >>log.txt
 echo %username% Log>>log.txt
 echo. >>log.txt
