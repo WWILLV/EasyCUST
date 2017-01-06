@@ -22,9 +22,17 @@ namespace CUST教务管理系统
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FM1());
+            Log a = new Log("log.txt");
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new FM1());
+            }
+            catch(Exception ex)
+            {
+                a.write("[ERROR]"+ex.Message);
+            }
         }
     }
 

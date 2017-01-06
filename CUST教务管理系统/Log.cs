@@ -17,8 +17,7 @@ namespace CUST教务管理系统
             {
                 StreamWriter log = new StreamWriter(path, true);
                 log.WriteLine("OSVersion：" + Environment.OSVersion.ToString());
-                log.WriteLine("MachineName:" + Environment.MachineName.ToString());
-                log.WriteLine(".Net Version:" + Environment.Version.ToString());
+                log.WriteLine("User:" + Environment.UserName.ToString());
                 log.Close();
             }
             clean();
@@ -27,7 +26,6 @@ namespace CUST教务管理系统
         {
             StreamWriter log = new StreamWriter(path, true);
             log.WriteLine("*");
-            log.WriteLine("User:" + Environment.UserName.ToString());
             log.WriteLine(System.DateTime.Now.ToLongDateString());
             log.Write("[" + System.DateTime.Now.ToLongTimeString() + "]");
             log.WriteLine(str);
@@ -47,8 +45,7 @@ namespace CUST教务管理系统
             {
                 StreamWriter log = new StreamWriter(path, false);
                 log.WriteLine("OSVersion：" + Environment.OSVersion.ToString());
-                log.WriteLine("MachineName:" + Environment.MachineName.ToString());
-                log.WriteLine(".Net Version:" + Environment.Version.ToString());
+                log.WriteLine("User:" + Environment.UserName.ToString());
                 log.Close();
             }
         }
