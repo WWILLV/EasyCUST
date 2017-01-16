@@ -270,7 +270,7 @@ namespace CUST教务管理系统
 
         private void linkLabel_open_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) //开源链接
         {
-            string url = "https://github.com/TheGreatFireWall/EasyCUST";
+            string url = "https://github.com/WWILLV/EasyCUST";
             System.Diagnostics.Process.Start(url);
         }
 

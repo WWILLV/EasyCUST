@@ -32,7 +32,7 @@ V 2.1.1
 
 ##联系我
 * [微博](http://weibo.com/u/2693120655)
-* [Github](https://github.com/TheGreatFireWall)
+* [Github](https://github.com/WWILLV)
 
 ##LICENSE
-[GNU](https://github.com/TheGreatFireWall/EasyCUST/blob/master/LICENSE)
+[GNU](https://github.com/WWILLV/EasyCUST/blob/master/LICENSE)
