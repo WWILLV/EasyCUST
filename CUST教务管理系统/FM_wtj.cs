@@ -22,7 +22,7 @@ namespace CUST教务管理系统
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_doCalc_Click(object sender, EventArgs e)
         {
             try
             {
@@ -47,13 +47,23 @@ namespace CUST教务管理系统
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_callCalc_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("calc");
         }
 
         /// <summary>
-        /// 自动计算未提交学分
+        /// 打开记事本
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_callNotepad_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("notepad");
+        }
+
+        /// <summary>
+        /// 自动计算学分
         /// </summary>
         private void credit()
         {
@@ -62,6 +72,16 @@ namespace CUST教务管理系统
                 double credit = Convert.ToDouble(textBox4.Text) - Convert.ToDouble(textBox2.Text);
                 textBox5.Text = credit.ToString();
             }
+            //if (textBox4.Text != "" && textBox5.Text != "" && textBox2.Text == "")
+            //{
+            //    double credit = Convert.ToDouble(textBox4.Text) - Convert.ToDouble(textBox5.Text);
+            //    textBox2.Text = credit.ToString();
+            //}
+            //if (textBox2.Text != "" && textBox5.Text != "" && textBox4.Text == "")
+            //{
+            //    double credit = Convert.ToDouble(textBox2.Text) + Convert.ToDouble(textBox5.Text);
+            //    textBox4.Text = credit.ToString();
+            //}
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -70,6 +90,11 @@ namespace CUST教务管理系统
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            credit();
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
             credit();
         }

@@ -42,8 +42,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_doCalc = new System.Windows.Forms.Button();
+            this.btn_callCalc = new System.Windows.Forms.Button();
+            this.btn_callNotepad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -155,35 +156,47 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(90, 21);
             this.textBox5.TabIndex = 12;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // button1
+            // btn_doCalc
             // 
-            this.button1.Location = new System.Drawing.Point(315, 222);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "计算！";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_doCalc.Location = new System.Drawing.Point(315, 222);
+            this.btn_doCalc.Name = "btn_doCalc";
+            this.btn_doCalc.Size = new System.Drawing.Size(75, 23);
+            this.btn_doCalc.TabIndex = 13;
+            this.btn_doCalc.Text = "计算！";
+            this.btn_doCalc.UseVisualStyleBackColor = true;
+            this.btn_doCalc.Click += new System.EventHandler(this.btn_doCalc_Click);
             // 
-            // button2
+            // btn_callCalc
             // 
-            this.button2.Location = new System.Drawing.Point(315, 181);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "系统计算器";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_callCalc.Location = new System.Drawing.Point(315, 181);
+            this.btn_callCalc.Name = "btn_callCalc";
+            this.btn_callCalc.Size = new System.Drawing.Size(75, 23);
+            this.btn_callCalc.TabIndex = 14;
+            this.btn_callCalc.Text = "系统计算器";
+            this.btn_callCalc.UseVisualStyleBackColor = true;
+            this.btn_callCalc.Click += new System.EventHandler(this.btn_callCalc_Click);
+            // 
+            // btn_callNotepad
+            // 
+            this.btn_callNotepad.Location = new System.Drawing.Point(315, 141);
+            this.btn_callNotepad.Name = "btn_callNotepad";
+            this.btn_callNotepad.Size = new System.Drawing.Size(75, 23);
+            this.btn_callNotepad.TabIndex = 15;
+            this.btn_callNotepad.Text = "记事本";
+            this.btn_callNotepad.UseVisualStyleBackColor = true;
+            this.btn_callNotepad.Click += new System.EventHandler(this.btn_callNotepad_Click);
             // 
             // FM_wtj
             // 
-            this.AcceptButton = this.button1;
+            this.AcceptButton = this.btn_doCalc;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 298);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_callNotepad);
+            this.Controls.Add(this.btn_callCalc);
+            this.Controls.Add(this.btn_doCalc);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -223,7 +236,8 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_doCalc;
+        private System.Windows.Forms.Button btn_callCalc;
+        private System.Windows.Forms.Button btn_callNotepad;
     }
 }
