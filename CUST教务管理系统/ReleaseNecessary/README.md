@@ -7,5 +7,6 @@ log.txt会在使用实验室上网功能时自动生成，是日志文件
 ##usr文件夹
 * usr.json
 usr.json保存用户名和密码用于快速登录
+
 ##Newtonsoft.Json.dll
 Json读写依赖该dll
