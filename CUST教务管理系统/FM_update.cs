@@ -18,7 +18,7 @@ namespace CUST教务管理系统
 
         private void btn_checkUpdate_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/TheGreatFireWall/EasyCUST/blob/master/README.md#最新更新");
+            System.Diagnostics.Process.Start("https://github.com/WWILLV/EasyCUST/blob/master/README.md#最新更新");
         }
     }
 }

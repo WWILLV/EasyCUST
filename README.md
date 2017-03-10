@@ -36,6 +36,9 @@ V 2.1.1
 ##下载
 <b>:triangular_flag_on_post: 因教务处老师要求，暂不提供下载，有需要的自己下原代码编译</b>
 
+###编译环境
+.Net 4.0 [VS2015](https://www.visualstudio.com/vs)
+
 ##联系我
 * [微博](http://weibo.com/u/2693120655)
 * [Github](https://github.com/WWILLV)
