@@ -1,6 +1,6 @@
 # EasyCUST
 长春理工大学教务管理、网费充值等便捷管理工具
-##使用注意
+## 使用注意
 注意：
 
 * 千万千万！千万别在浏览器界面开窗口，关闭窗口，这将导致软件崩溃！
@@ -12,7 +12,7 @@
 * 浏览器模式为所有链接在浏览器中打开，软件默认置顶
 * 若登录后还提示未登录，重启软件
 
-##最新更新
+## 最新更新
 
 V 2.1.3 Beta：
 
@@ -24,7 +24,7 @@ V 2.1.2：
 * 加密保存的用户名和密码
 * 增加网络检测
 
-###之前更新：
+### 之前更新：
 
 V 2.1.1
 
@@ -33,15 +33,15 @@ V 2.1.1
 * 修改UI，更美观
 * 修复了一些已知的Bug
 
-##下载
+## 下载
 <b>:triangular_flag_on_post: 因教务处老师要求，暂不提供下载，有需要的自己下原代码编译</b>
 
-###编译环境
+### 编译环境
 .Net 4.0 [VS2015](https://www.visualstudio.com/vs)
 
-##联系我
+## 联系我
 * [微博](http://weibo.com/u/2693120655)
 * [Github](https://github.com/WWILLV)
 
-##LICENSE
-[GNU](https://github.com/WWILLV/EasyCUST/blob/master/LICENSE)
+## LICENSE
+[GPL](https://github.com/WWILLV/EasyCUST/blob/master/LICENSE)
