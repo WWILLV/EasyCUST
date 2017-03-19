@@ -60,6 +60,7 @@
             this.btn_fangan = new System.Windows.Forms.Button();
             this.btn_quickLog = new System.Windows.Forms.Button();
             this.btn_rasdial = new System.Windows.Forms.Button();
+            this.btn_cwc = new System.Windows.Forms.Button();
             this.group_Function.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,7 @@
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(553, 490);
+            this.webBrowser1.Size = new System.Drawing.Size(553, 538);
             this.webBrowser1.TabIndex = 0;
             // 
             // num
@@ -172,7 +173,7 @@
             // 
             // btn_choseclass
             // 
-            this.btn_choseclass.Location = new System.Drawing.Point(20, 441);
+            this.btn_choseclass.Location = new System.Drawing.Point(20, 488);
             this.btn_choseclass.Name = "btn_choseclass";
             this.btn_choseclass.Size = new System.Drawing.Size(75, 23);
             this.btn_choseclass.TabIndex = 13;
@@ -182,7 +183,7 @@
             // 
             // btn_teachergrade
             // 
-            this.btn_teachergrade.Location = new System.Drawing.Point(120, 441);
+            this.btn_teachergrade.Location = new System.Drawing.Point(120, 488);
             this.btn_teachergrade.Name = "btn_teachergrade";
             this.btn_teachergrade.Size = new System.Drawing.Size(75, 23);
             this.btn_teachergrade.TabIndex = 14;
@@ -195,7 +196,7 @@
             this.version.AutoSize = true;
             this.version.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.version.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.version.Location = new System.Drawing.Point(3, 475);
+            this.version.Location = new System.Drawing.Point(3, 523);
             this.version.Name = "version";
             this.version.Size = new System.Drawing.Size(215, 12);
             this.version.TabIndex = 15;
@@ -203,7 +204,7 @@
             // 
             // btn_support
             // 
-            this.btn_support.Location = new System.Drawing.Point(20, 357);
+            this.btn_support.Location = new System.Drawing.Point(20, 397);
             this.btn_support.Name = "btn_support";
             this.btn_support.Size = new System.Drawing.Size(75, 23);
             this.btn_support.TabIndex = 16;
@@ -266,7 +267,7 @@
             // 
             // btn_exit
             // 
-            this.btn_exit.Location = new System.Drawing.Point(120, 397);
+            this.btn_exit.Location = new System.Drawing.Point(120, 437);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(75, 23);
             this.btn_exit.TabIndex = 24;
@@ -276,7 +277,7 @@
             // 
             // btn_feedback
             // 
-            this.btn_feedback.Location = new System.Drawing.Point(120, 357);
+            this.btn_feedback.Location = new System.Drawing.Point(120, 397);
             this.btn_feedback.Name = "btn_feedback";
             this.btn_feedback.Size = new System.Drawing.Size(75, 23);
             this.btn_feedback.TabIndex = 25;
@@ -286,7 +287,7 @@
             // 
             // btn_checkupdate
             // 
-            this.btn_checkupdate.Location = new System.Drawing.Point(120, 318);
+            this.btn_checkupdate.Location = new System.Drawing.Point(120, 358);
             this.btn_checkupdate.Name = "btn_checkupdate";
             this.btn_checkupdate.Size = new System.Drawing.Size(75, 23);
             this.btn_checkupdate.TabIndex = 26;
@@ -316,6 +317,7 @@
             // 
             // group_Function
             // 
+            this.group_Function.Controls.Add(this.btn_cwc);
             this.group_Function.Controls.Add(this.btn_willv);
             this.group_Function.Controls.Add(this.linkLabel_open);
             this.group_Function.Controls.Add(this.btn_fangan);
@@ -348,13 +350,13 @@
             this.group_Function.Dock = System.Windows.Forms.DockStyle.Right;
             this.group_Function.Location = new System.Drawing.Point(557, 0);
             this.group_Function.Name = "group_Function";
-            this.group_Function.Size = new System.Drawing.Size(264, 490);
+            this.group_Function.Size = new System.Drawing.Size(264, 538);
             this.group_Function.TabIndex = 29;
             this.group_Function.TabStop = false;
             // 
             // btn_willv
             // 
-            this.btn_willv.Location = new System.Drawing.Point(20, 397);
+            this.btn_willv.Location = new System.Drawing.Point(20, 437);
             this.btn_willv.Name = "btn_willv";
             this.btn_willv.Size = new System.Drawing.Size(75, 23);
             this.btn_willv.TabIndex = 33;
@@ -367,7 +369,7 @@
             this.linkLabel_open.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabel_open.AutoSize = true;
-            this.linkLabel_open.Location = new System.Drawing.Point(18, 440);
+            this.linkLabel_open.Location = new System.Drawing.Point(18, 488);
             this.linkLabel_open.Name = "linkLabel_open";
             this.linkLabel_open.Size = new System.Drawing.Size(197, 24);
             this.linkLabel_open.TabIndex = 32;
@@ -405,11 +407,21 @@
             this.btn_rasdial.UseVisualStyleBackColor = true;
             this.btn_rasdial.Click += new System.EventHandler(this.btn_rasdial_Click);
             // 
+            // btn_cwc
+            // 
+            this.btn_cwc.Location = new System.Drawing.Point(120, 318);
+            this.btn_cwc.Name = "btn_cwc";
+            this.btn_cwc.Size = new System.Drawing.Size(75, 23);
+            this.btn_cwc.TabIndex = 34;
+            this.btn_cwc.Text = "校园安心付";
+            this.btn_cwc.UseVisualStyleBackColor = true;
+            this.btn_cwc.Click += new System.EventHandler(this.btn_cwc_Click);
+            // 
             // FM1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 490);
+            this.ClientSize = new System.Drawing.Size(821, 538);
             this.Controls.Add(this.group_Function);
             this.Controls.Add(this.webBrowser1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -455,6 +467,7 @@
         private System.Windows.Forms.Button btn_fangan;
         private System.Windows.Forms.LinkLabel linkLabel_open;
         private System.Windows.Forms.Button btn_willv;
+        private System.Windows.Forms.Button btn_cwc;
     }
 }
 

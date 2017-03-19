@@ -154,6 +154,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="interface.txt" />
     <Content Include="Mac OS X Modern Icon 17.ico" />
   </ItemGroup>
   <ItemGroup>

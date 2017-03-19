@@ -1,0 +1,33 @@
+﻿这里介绍一下长春理工大学教务管理系统的一些接口方便后来开发者使用
+#接口全部为本人使用Burpsuite抓包寻找,如果后期教务管理系统更新，也可使用该工具抓包查看
+以下为接口介绍：
+登录接口：
+__VIEWSTATE=%2FwEPDwUJMTQyNDg3OTM5ZGQ%3D&__EVENTVALIDATION=%2FwEWBAK4vfWFDAKl1bKzCQK1qbSWCwKM54rGBg%3D%3D&txtUserName=用户名&txtPassWord=密码&Button1=%E7%99%BB%E5%BD%95
+选课（34、33为当时抓到的课程序号，下同）：
+__EVENTTARGET = 34 & __EVENTARGUMENT = &__VIEWSTATE = dDw4NzEyMDk0MzQ7dDw7bDxpPDE % 2BOz47bDx0PDtsPGk8Mj47aTw4Pjs % 2BO2w8dDxwPHA8bDxUZXh0Oz47bDwyMDE2LTIwMTflrablubTnrKzkuIDlrabmnJ87Pj47Pjs7Pjt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE % 2BO2k8Mj47PjtsPHQ8cDxwPGw8SG9yaXpvbnRhbEFsaWduO18hU0I7PjtsPFN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuSG9yaXpvbnRhbEFsaWduLCBTeXN0ZW0uV2ViLCBWZXJzaW9uPTEuMC41MDAwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYTxSaWdodD47aTw2NTUzNj47Pj47Pjs7Pjt0PHA8cDxsPEhvcml6b250YWxBbGlnbjtfIVNCOz47bDw1MDxDZW50ZXI % 2BO2k8NjU1MzY % 2BOz4 % 2BOz47Oz47dDxwPHA8bDxIb3Jpem9udGFsQWxpZ247XyFTQjs % 2BO2w8NTA8TGVmdD47aTw2NTUzNj47Pj47Pjs7Pjs % 2BPjs % 2BPjs % 2BPjs % 2BPjtsPDE7MjszOzQ7NTs2OzEwOzExOzIxOzIyOzIzOzI0OzI1OzI2OzI3OzI4OzI5OzMwOzMxOzMyOzMzOzM0OzM1OzM2OzM3OzM4OzM5OzQwOzQxOzQyOzQzOzQ0OzQ1OzQ2OzQ3OzQ4OzQ5OzUwOzUxOzUyOzUzOz4 % 2BpaDSqdIC1XV % 2BOOHEltfrv2fTSZo % 3D & 1 = on & 2 = on & 3 = on & 4 = on & 5 = on & 10 = on & 34 = on & scrollValue = 827
+__EVENTTARGET = 33 & __EVENTARGUMENT = &__VIEWSTATE = dDw4NzEyMDk0MzQ7dDw7bDxpPDE % 2BOz47bDx0PDtsPGk8Mj47aTw4Pjs % 2BO2w8dDxwPHA8bDxUZXh0Oz47bDwyMDE2LTIwMTflrablubTnrKzkuIDlrabmnJ87Pj47Pjs7Pjt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE % 2BO2k8Mj47PjtsPHQ8cDxwPGw8SG9yaXpvbnRhbEFsaWduO18hU0I7PjtsPFN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuSG9yaXpvbnRhbEFsaWduLCBTeXN0ZW0uV2ViLCBWZXJzaW9uPTEuMC41MDAwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYTxSaWdodD47aTw2NTUzNj47Pj47Pjs7Pjt0PHA8cDxsPEhvcml6b250YWxBbGlnbjtfIVNCOz47bDw1MDxDZW50ZXI % 2BO2k8NjU1MzY % 2BOz4 % 2BOz47Oz47dDxwPHA8bDxIb3Jpem9udGFsQWxpZ247XyFTQjs % 2BO2w8NTA8TGVmdD47aTw2NTUzNj47Pj47Pjs7Pjs % 2BPjs % 2BPjs % 2BPjs % 2BPjtsPDE7MjszOzQ7NTs2OzEwOzExOzIxOzIyOzIzOzI0OzI1OzI2OzI3OzI4OzI5OzMwOzMxOzMyOzMzOzM0OzM1OzM2OzM3OzM4OzM5OzQwOzQxOzQyOzQzOzQ0OzQ1OzQ2OzQ3OzQ4OzQ5OzUwOzUxOzUyOzUzOz4 % 2BpaDSqdIC1XV % 2BOOHEltfrv2fTSZo % 3D & 1 = on & 2 = on & 3 = on & 4 = on & 5 = on & 10 = on & 33 = on & scrollValue = 756
+取消选课：
+__EVENTTARGET = 33 & __EVENTARGUMENT = &__VIEWSTATE = dDw4NzEyMDk0MzQ7dDw7bDxpPDE % 2BOz47bDx0PDtsPGk8Mj47aTw4Pjs % 2BO2w8dDxwPHA8bDxUZXh0Oz47bDwyMDE2LTIwMTflrablubTnrKzkuIDlrabmnJ87Pj47Pjs7Pjt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE % 2BO2k8Mj47PjtsPHQ8cDxwPGw8SG9yaXpvbnRhbEFsaWduO18hU0I7PjtsPFN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuSG9yaXpvbnRhbEFsaWduLCBTeXN0ZW0uV2ViLCBWZXJzaW9uPTEuMC41MDAwLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYTxSaWdodD47aTw2NTUzNj47Pj47Pjs7Pjt0PHA8cDxsPEhvcml6b250YWxBbGlnbjtfIVNCOz47bDw1MDxDZW50ZXI % 2BO2k8NjU1MzY % 2BOz4 % 2BOz47Oz47dDxwPHA8bDxIb3Jpem9udGFsQWxpZ247XyFTQjs % 2BO2w8NTA8TGVmdD47aTw2NTUzNj47Pj47Pjs7Pjs % 2BPjs % 2BPjs % 2BPjs % 2BPjtsPDE7MjszOzQ7NTs2OzEwOzExOzIxOzIyOzIzOzI0OzI1OzI2OzI3OzI4OzI5OzMwOzMxOzMyOzMzOzM0OzM1OzM2OzM3OzM4OzM5OzQwOzQxOzQyOzQzOzQ0OzQ1OzQ2OzQ3OzQ4OzQ5OzUwOzUxOzUyOzUzOz4 % 2BpaDSqdIC1XV % 2BOOHEltfrv2fTSZo % 3D & 1 = on & 2 = on & 3 = on & 4 = on & 5 = on & 10 = on & scrollValue = 439
+自定义教务管理系统错误提示：
+http://jwgl.cust.edu.cn/teachweb/Error.aspx?errorInfo=错误信息&noReturn=true
+关于网费充值：
+1、先通过信息门户获取cookies：http://my.cust.edu.cn/userPasswordValidate.portal?Login.Token1=用户名&Login.Token2=密码
+2、使用信息门户的接口跳转充值网费：第一次跳转：http://my.cust.edu.cn/index.portal 第二次跳转目标：http://ecard.cust.edu.cn/cclgportalHome.action
+
+下面放一些登录后的常用链接：
+选课：
+http://jwgl.cust.edu.cn/teachweb/xkxt/CSSelectLesson.aspx
+选课结果：
+http://jwgl.cust.edu.cn/teachweb/xkxt/SelectInfoResult.aspx
+成绩：
+http://jwgl.cust.edu.cn/teachweb/cjcx/StudentGrade.aspx
+实验查询：
+http://jwgl.cust.edu.cn/teachweb/syyy/EBCousesQuery.aspx
+评课：
+http://jwgl.cust.edu.cn/teachweb/jspg/CourseEvaluate.aspx
+个人课表查询：
+http://jwgl.cust.edu.cn/teachweb/kbcx/Report/wfmRptPersonalCourses.aspx?role=student
+培养方案：
+http://jwc.cust.edu.cn/Resource.asp?BigClassID=109&SmallClassID=524
+校园安心付(当时我使用Chrome出现了无法输入密码的情况，所以调用IE打开)：
+http://210.47.1.41:8081/school/index

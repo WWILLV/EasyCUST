@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -278,6 +279,16 @@ namespace CUST教务管理系统
         {
             string url = "http://www.willv.cn";
             System.Diagnostics.Process.Start(url);
+        }
+
+        private void btn_cwc_Click(object sender, EventArgs e)  //校园安心付
+        {
+            string url = "http://210.47.1.41:8081/school/index";
+            ProcessStartInfo startInfo = new ProcessStartInfo("IExplore.exe");
+            startInfo.Arguments = url;
+            Process process1 = new Process();
+            process1.StartInfo = startInfo;
+            process1.Start();
         }
 
         #endregion

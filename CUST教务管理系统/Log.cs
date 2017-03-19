@@ -41,7 +41,7 @@ namespace CUST教务管理系统
         public void clean() //清理日志
         {
             FileInfo fi = new FileInfo(path);
-            if(fi.Length>=(100*1024))   //100k清理log
+            if(fi.Length>=(20*1024))   //20k清理log
             {
                 StreamWriter log = new StreamWriter(path, false);
                 log.WriteLine("OSVersion：" + Environment.OSVersion.ToString());
