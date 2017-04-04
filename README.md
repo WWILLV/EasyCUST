@@ -33,6 +33,16 @@ V 2.1.1
 * 修改UI，更美观
 * 修复了一些已知的Bug
 
+## 注意
+<b>本工具短期内不会更新了，主要原因有2个，作者忙于考研，其次是有了一个很好的替代品:[CUSTED](http://m.cust.edu.cn/index.cc),本工具的使命也算完结了。以后离开学校以后，为了以后更好的开发，我将附上如何抓取教务管理系统接口的方法。</b>
+
+### 抓取教务管理系统接口
+***使用Burpsuite***
+
+这里不介绍使用方法了，具体详情可以看[官方中文文档](https://yw9381.gitbooks.io/burp_suite_doc_zh_cn/content/),其中，如何抓取接口可以看这里:[Proxy组件](https://yw9381.gitbooks.io/burp_suite_doc_zh_cn/content/Proxy/)
+
+**中文文档未更新可以直接看[英文文档](https://portswigger.net/burp/help/),[Proxy组件](https://portswigger.net/burp/help/proxy.html)**
+
 ## 下载
 <b>:triangular_flag_on_post: 因教务处老师要求，暂不提供下载，有需要的自己下原代码编译</b>
 
