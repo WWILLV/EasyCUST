@@ -291,6 +291,12 @@ namespace CUST教务管理系统
             process1.Start();
         }
 
+        private void btn_custed_Click(object sender, EventArgs e)   //CUSTED
+        {
+            string url = "http://m.cust.edu.cn";
+            System.Diagnostics.Process.Start(url);
+        }
+
         #endregion
 
     }

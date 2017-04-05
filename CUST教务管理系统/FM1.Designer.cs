@@ -55,12 +55,13 @@
             this.btn_auto = new System.Windows.Forms.Button();
             this.btn_wtj = new System.Windows.Forms.Button();
             this.group_Function = new System.Windows.Forms.GroupBox();
+            this.btn_cwc = new System.Windows.Forms.Button();
             this.btn_willv = new System.Windows.Forms.Button();
             this.linkLabel_open = new System.Windows.Forms.LinkLabel();
             this.btn_fangan = new System.Windows.Forms.Button();
             this.btn_quickLog = new System.Windows.Forms.Button();
             this.btn_rasdial = new System.Windows.Forms.Button();
-            this.btn_cwc = new System.Windows.Forms.Button();
+            this.btn_custed = new System.Windows.Forms.Button();
             this.group_Function.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -317,6 +318,7 @@
             // 
             // group_Function
             // 
+            this.group_Function.Controls.Add(this.btn_custed);
             this.group_Function.Controls.Add(this.btn_cwc);
             this.group_Function.Controls.Add(this.btn_willv);
             this.group_Function.Controls.Add(this.linkLabel_open);
@@ -353,6 +355,16 @@
             this.group_Function.Size = new System.Drawing.Size(264, 538);
             this.group_Function.TabIndex = 29;
             this.group_Function.TabStop = false;
+            // 
+            // btn_cwc
+            // 
+            this.btn_cwc.Location = new System.Drawing.Point(120, 318);
+            this.btn_cwc.Name = "btn_cwc";
+            this.btn_cwc.Size = new System.Drawing.Size(75, 23);
+            this.btn_cwc.TabIndex = 34;
+            this.btn_cwc.Text = "校园安心付";
+            this.btn_cwc.UseVisualStyleBackColor = true;
+            this.btn_cwc.Click += new System.EventHandler(this.btn_cwc_Click);
             // 
             // btn_willv
             // 
@@ -407,15 +419,15 @@
             this.btn_rasdial.UseVisualStyleBackColor = true;
             this.btn_rasdial.Click += new System.EventHandler(this.btn_rasdial_Click);
             // 
-            // btn_cwc
+            // btn_custed
             // 
-            this.btn_cwc.Location = new System.Drawing.Point(120, 318);
-            this.btn_cwc.Name = "btn_cwc";
-            this.btn_cwc.Size = new System.Drawing.Size(75, 23);
-            this.btn_cwc.TabIndex = 34;
-            this.btn_cwc.Text = "校园安心付";
-            this.btn_cwc.UseVisualStyleBackColor = true;
-            this.btn_cwc.Click += new System.EventHandler(this.btn_cwc_Click);
+            this.btn_custed.Location = new System.Drawing.Point(20, 358);
+            this.btn_custed.Name = "btn_custed";
+            this.btn_custed.Size = new System.Drawing.Size(75, 23);
+            this.btn_custed.TabIndex = 35;
+            this.btn_custed.Text = "CUSTED";
+            this.btn_custed.UseVisualStyleBackColor = true;
+            this.btn_custed.Click += new System.EventHandler(this.btn_custed_Click);
             // 
             // FM1
             // 
@@ -468,6 +480,7 @@
         private System.Windows.Forms.LinkLabel linkLabel_open;
         private System.Windows.Forms.Button btn_willv;
         private System.Windows.Forms.Button btn_cwc;
+        private System.Windows.Forms.Button btn_custed;
     }
 }
 
