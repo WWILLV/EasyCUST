@@ -168,7 +168,7 @@ namespace CUST教务管理系统
                 isbrowser = false;
                 TopMost = false;
                 webBrowser1.Visible = true;
-                this.Size = new Size(868, 538);
+                this.Size = new Size(868, 577);
                 group_Function.Dock = DockStyle.Right;
                 this.Opacity = 1;
                 this.MaximizeBox = true;
@@ -181,7 +181,7 @@ namespace CUST教务管理系统
                 MessageBox.Show("浏览器模式已开启，窗口将置顶，不需要时最小化即可，不建议退出程序", "浏览器模式开启");
                 this.WindowState = FormWindowState.Normal;
                 webBrowser1.Visible = false;
-                this.Size = new Size(300, 538);
+                this.Size = new Size(300, 577);
                 group_Function.Dock = DockStyle.Fill;
                 this.Location = new Point(
                     (Screen.PrimaryScreen.Bounds.Width - this.Width) / 2,
@@ -277,7 +277,7 @@ namespace CUST教务管理系统
 
         private void btn_willv_Click(object sender, EventArgs e)    //作者主页
         {
-            string url = "http://www.willv.cn";
+            string url = "https://willv.cn";
             System.Diagnostics.Process.Start(url);
         }
 
@@ -294,7 +294,8 @@ namespace CUST教务管理系统
         private void btn_custed_Click(object sender, EventArgs e)   //CUSTED
         {
             string url = "http://m.cust.edu.cn";
-            System.Diagnostics.Process.Start(url);
+            webBrowser1.Navigate(url);
+            browesermode(url);
         }
 
         #endregion

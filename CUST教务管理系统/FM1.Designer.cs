@@ -55,13 +55,13 @@
             this.btn_auto = new System.Windows.Forms.Button();
             this.btn_wtj = new System.Windows.Forms.Button();
             this.group_Function = new System.Windows.Forms.GroupBox();
+            this.btn_custed = new System.Windows.Forms.Button();
             this.btn_cwc = new System.Windows.Forms.Button();
             this.btn_willv = new System.Windows.Forms.Button();
             this.linkLabel_open = new System.Windows.Forms.LinkLabel();
             this.btn_fangan = new System.Windows.Forms.Button();
             this.btn_quickLog = new System.Windows.Forms.Button();
             this.btn_rasdial = new System.Windows.Forms.Button();
-            this.btn_custed = new System.Windows.Forms.Button();
             this.group_Function.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +74,7 @@
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(553, 538);
+            this.webBrowser1.Size = new System.Drawing.Size(584, 538);
             this.webBrowser1.TabIndex = 0;
             // 
             // num
@@ -350,11 +350,21 @@
             this.group_Function.Controls.Add(this.textBox_usernum);
             this.group_Function.Controls.Add(this.num);
             this.group_Function.Dock = System.Windows.Forms.DockStyle.Right;
-            this.group_Function.Location = new System.Drawing.Point(557, 0);
+            this.group_Function.Location = new System.Drawing.Point(588, 0);
             this.group_Function.Name = "group_Function";
             this.group_Function.Size = new System.Drawing.Size(264, 538);
             this.group_Function.TabIndex = 29;
             this.group_Function.TabStop = false;
+            // 
+            // btn_custed
+            // 
+            this.btn_custed.Location = new System.Drawing.Point(20, 358);
+            this.btn_custed.Name = "btn_custed";
+            this.btn_custed.Size = new System.Drawing.Size(75, 23);
+            this.btn_custed.TabIndex = 35;
+            this.btn_custed.Text = "CUSTED";
+            this.btn_custed.UseVisualStyleBackColor = true;
+            this.btn_custed.Click += new System.EventHandler(this.btn_custed_Click);
             // 
             // btn_cwc
             // 
@@ -419,21 +429,11 @@
             this.btn_rasdial.UseVisualStyleBackColor = true;
             this.btn_rasdial.Click += new System.EventHandler(this.btn_rasdial_Click);
             // 
-            // btn_custed
-            // 
-            this.btn_custed.Location = new System.Drawing.Point(20, 358);
-            this.btn_custed.Name = "btn_custed";
-            this.btn_custed.Size = new System.Drawing.Size(75, 23);
-            this.btn_custed.TabIndex = 35;
-            this.btn_custed.Text = "CUSTED";
-            this.btn_custed.UseVisualStyleBackColor = true;
-            this.btn_custed.Click += new System.EventHandler(this.btn_custed_Click);
-            // 
             // FM1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 538);
+            this.ClientSize = new System.Drawing.Size(852, 538);
             this.Controls.Add(this.group_Function);
             this.Controls.Add(this.webBrowser1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
